@@ -26,7 +26,7 @@
 + Cui, Wanting: Improved by adding rotate element.  
 + Kong, Yuehan: Tried to improve by adding upper body element; wrote and organized github page.
 + Lam, Leo: Debugged the code; wrote the main notebook.
-+ Zha, Yuhan: Researched tensorflow; prepare the presentation.
++ Zha, Yuhan: Researched and introduced tensorflow; prepare the presentation.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
