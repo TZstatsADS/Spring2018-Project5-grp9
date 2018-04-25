@@ -75,7 +75,7 @@ def face_dectect_image(directory = '../data/test_image/cascade/'):
         plt.imshow(RGB_img)
         plt.show()
             
-        cv2.imwrite('./output/processed_{}'.format(TEST_IMAGES_NAMES[i+1]),img)
+        cv2.imwrite('../output/processed_{}'.format(TEST_IMAGES_NAMES[i+1]),img)
         i +=1
         
 

@@ -1,5 +1,5 @@
 
-def objectDetection(directory = './data/test_images/tensorflow'):  
+def objectDetection(directory = '../data/test_image/tensorflow'):  
     import cv2
     # coding: utf-8
     # # Object Detection Demo
@@ -118,7 +118,7 @@ def objectDetection(directory = './data/test_images/tensorflow'):
     # If you want to test the code with your images, just add path to the images to the TEST_IMAGE_PATHS.
     PATH_TO_TEST_IMAGES_DIR = directory
     TEST_IMAGES_NAMES = os.listdir(directory)
-    TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, TEST_IMAGES_NAMES[i]) for i in range(1,len(TEST_IMAGES_NAMES))]
+    TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, TEST_IMAGES_NAMES[i]) for i in range(1,len(TEST_IMAGES_NAMES))]
     
     # Size, in inches, of the output images.
     IMAGE_SIZE = (12, 8)
