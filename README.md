@@ -12,7 +12,7 @@
 	+ Zha, Yuhan (yz3284@columbia.edu)
 + Project summary: In this project, we use a method haar to extract features. After that, applying extracted features to cascade method, we are able to dectect people's faces and also count the number of faces through pictures as well as webcam. Finally, we implement the contemporary model which can distinguish people as well as objects with confidence value through pictures and webcam.
 + [Jupyter Notebook](doc/main(1).ipynb)
-+ A main reproducible [presentation](doc/main(1).pdf)
++ [A main reproducible presentation](doc/main(1).pdf)
 
 **Result demonstration**
 
