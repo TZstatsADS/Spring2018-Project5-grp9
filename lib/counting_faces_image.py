@@ -6,7 +6,7 @@ Created on Sat Apr 21 20:24:20 2018
 @author: zailchen
 """
 
-def face_dectect_image(directory = './data/test_images/cascade'):
+def face_dectect_image(directory = '../data/test_image/cascade/'):
 
     import numpy as np
     import cv2
@@ -35,7 +35,7 @@ def face_dectect_image(directory = './data/test_images/cascade'):
         return np.array((newx, newy, pos[:,2], pos[:,3]), int).T
     
     
-    face_cascade = cv2.CascadeClassifier('./library/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('../lib/haarcascade_frontalface_default.xml')
     
     
     PATH_TO_TEST_IMAGES_DIR = directory
