@@ -1,8 +1,8 @@
-# ADS Project 5: 
+# ADS Project 5: Face Detection
 
 Term: Spring 2018
 
-+ Team #
++ Team #9
 + Projec title: Lorem ipsum dolor sit amet
 + Team members
 	+ team member 1
