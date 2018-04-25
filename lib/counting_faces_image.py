@@ -35,7 +35,7 @@ def face_dectect_image(directory = '../data/test_image/cascade/', scaleFactor = 
         return np.array((newx, newy, pos[:,2], pos[:,3]), int).T
     
     
-    face_cascade = cv2.CascadeClassifier('/Users/zailchen/Desktop/Project5/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('../lib/haarcascade_frontalface_default.xml')
     
     
     PATH_TO_TEST_IMAGES_DIR = directory
