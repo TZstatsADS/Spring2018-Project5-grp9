@@ -1,18 +1,26 @@
 # ADS Project 5: Face Detection
 
-Term: Spring 2018
+## Projec title: Face Detection
 
-+ Team #9
-+ Projec title: Lorem ipsum dolor sit amet
+[Jupyter Notebook](doc/)
+[Presentation](doc/)
+
++ Term: Spring 2018
++ Team 9
 + Team members
-	+ team member 1
-	+ team member 2
-	+ team member 3
-	+ team member 4
-	+ team member 5
-+ Project summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	+ Chen Ziyu (zc2393@columbia.edu)
+	+ Cui Wanting (wc2619@columbia.edu)
+	+ Kong Yuehan (yk2756@columbia.edu)
+	+ Lam Leo (lkl2129@columbia.edu)
+	+ Zha Yuhan (yz3284@columbia.edu)
++ Project summary: In this project, we use a method haar to extract features. After that, applying extracted features to cascade method, we are able to dectect people's faces and also count the number of faces through pictures as well as webcam. Finally, we implement the contemporary model which can distinguish people as well as objects with confidence value through pictures and webcam. 
 	
-**Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
+**Contribution statement**: 
++ Chen Ziyu
++ Cui Wanting
++ Kong Yuehan
++ Lam Leo
++ Zha Yuhan
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
