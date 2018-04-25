@@ -2,7 +2,7 @@
 
 **Projec title**: Face Detection
 
-[Jupyter Notebook](doc/)
+[Jupyter Notebook](doc/main.ipynb)
 
 [Presentation](doc/)
 
