@@ -6,7 +6,7 @@ Created on Sat Apr 21 20:24:20 2018
 @author: zailchen
 """
 
-def face_dectect_image(directory = '../data/test_image/cascade/'):
+def face_dectect_image(directory = '../data/test_image/cascade/', scaleFactor = 1.3, minNeighbors = 5):
 
     import numpy as np
     import cv2
@@ -35,7 +35,7 @@ def face_dectect_image(directory = '../data/test_image/cascade/'):
         return np.array((newx, newy, pos[:,2], pos[:,3]), int).T
     
     
-    face_cascade = cv2.CascadeClassifier('../lib/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('/Users/zailchen/Desktop/Project5/haarcascade_frontalface_default.xml')
     
     
     PATH_TO_TEST_IMAGES_DIR = directory
@@ -51,15 +51,14 @@ def face_dectect_image(directory = '../data/test_image/cascade/'):
         height = int(min(img.shape[0:2]))
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         
-        for angle in [0, -45, 45]:
+        for angle in [0, -30, 30]:
             rimg = rotate_image(gray, angle)
-            faces = face_cascade.detectMultiScale(rimg, 1.2, 5)
+            faces = face_cascade.detectMultiScale(rimg, scaleFactor, minNeighbors)
             
             if len(faces):
                     faces = rotate_point(faces, img, -angle)
                     break
         
-        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         
         if len(faces) == 0:
             print("No faces found")
