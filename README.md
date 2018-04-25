@@ -4,8 +4,6 @@
 
 [Jupyter Notebook](doc/main.ipynb)
 
-[Presentation](doc/)
-
 + Term: Spring 2018
 + Team 9
 + Team members
