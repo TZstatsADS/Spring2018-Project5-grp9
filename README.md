@@ -14,7 +14,7 @@
 + Project Challenge: The first cascade model could not detect rotated faces. To encounter such limitation, we modified our model so that it could detect rotated faces. The second cascade model could solve the rotation problem but could not detect side faces. To overcome such limitations, a popular and powerful approach is the use of tensorflow. In this section, we implement object detection with a pretrained model, Tensorflow Object Detection API. This model requires intallation of tensorflow. Further instruction of the installation can be referred to https://github.com/tensorflow/models/tree/master/research/object_detection. This model can detect and categorize object, including person, bottle, cellphone, etc. However, cascada model would result better if only faces are showed on an image while this API model would result better if more parts of human body are showed. 
 
 + [Jupyter Notebook](doc/main.ipynb)
-+ A main reproducible [presentation](doc/main.pdf)
++ A main reproducible [presentation](https://rawgit.com/TZstatsADS/Spring2018-Project5-grp_9/master/doc/main.html)
 
 **Result demonstration**
 
