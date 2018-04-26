@@ -17,9 +17,9 @@ def objectDetectionCap():
     
 
     # This is needed since the notebook is stored in the object_detection folder.
-    cwd = os.getcwd()
-    os.chdir(cwd)
-    sys.path.append("../lib")
+    #cwd = os.getcwd()
+    os.chdir('../lib/object_detection')
+    #sys.path.append("..")
     from object_detection.utils import ops as utils_ops
     
     if tf.__version__ < '1.4.0':
@@ -125,6 +125,7 @@ def objectDetectionCap():
               cv2.destroyAllWindows()
               cap.release()
               break
-    
+
+    os.chdir('../../doc')
     
     

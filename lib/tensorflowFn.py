@@ -22,9 +22,9 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
     from PIL import Image
     
     # This is needed since the notebook is stored in the object_detection folder.
-    cwd = os.getcwd()
-    os.chdir(cwd)
-    sys.path.append("../lib")
+    #cwd = os.getcwd()
+    os.chdir('../lib/object_detection')
+    #sys.path.append("..")
     from object_detection.utils import ops as utils_ops
     
     if tf.__version__ < '1.4.0':
@@ -197,7 +197,5 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
       plt.figure(figsize=IMAGE_SIZE)
       plt.imshow(image_np)
       
-    
- 
-print(sys.path)   
+    os.chdir('../../doc')
     
