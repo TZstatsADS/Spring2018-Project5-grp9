@@ -53,7 +53,7 @@ def face_dectect_image(directory = '../data/test_image/cascade/', scaleFactor = 
         
         for angle in [0, -30, 30]:
             rimg = rotate_image(gray, angle)
-            faces = face_cascade.detectMultiScale(rimg, scaleFactor, minNeighbors)
+            faces = face_cascade.detectMultiScale(rimg, 1.3, 5)
             
             if len(faces):
                     faces = rotate_point(faces, img, -angle)
@@ -77,8 +77,6 @@ def face_dectect_image(directory = '../data/test_image/cascade/', scaleFactor = 
         cv2.imwrite('../output/processed_{}'.format(TEST_IMAGES_NAMES[i+1]),img)
         i +=1
         
-
-
 
 
 

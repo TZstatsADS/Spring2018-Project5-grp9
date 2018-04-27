@@ -18,8 +18,10 @@ def objectDetectionCap():
 
     # This is needed since the notebook is stored in the object_detection folder.
     #cwd = os.getcwd()
-    os.chdir('../lib/object_detection')
+    os.chdir('../lib')
     #sys.path.append("..")
+    import object_detection
+    os.chdir('../lib/object_detection')
     from object_detection.utils import ops as utils_ops
     
     if tf.__version__ < '1.4.0':
