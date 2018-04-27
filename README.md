@@ -22,7 +22,7 @@
 As showed above, our cascade model can accurately detect rotated faces.
 	
 **Contribution statement**: Generally we did the project together during our meetings (implement face detection model and API).
-+ Chen, Ziyu: Built the original model; implemented tensorflow to a contemporary model; debugged and edited the main notebook.
++ Chen, Ziyu: Built the original model; implemented tensorflow to a contemporary model; debugged and edited the main notebook to make it reproducible.
 + Cui, Wanting: Improved by adding rotate element.  
 + Kong, Yuehan: Tried to improve by adding upper body element; wrote and organized github page.
 + Lam, Leo: Debugged the code; wrote the main notebook.
