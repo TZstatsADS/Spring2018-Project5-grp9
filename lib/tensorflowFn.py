@@ -1,5 +1,5 @@
 
-def objectDetection(directory = '../data/test_image/tensorflow'):  
+def objectDetection(directory = '../../data/test_image/tensorflow'):  
     import cv2
     # coding: utf-8
     # # Object Detection Demo
@@ -23,10 +23,10 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
     
     # This is needed since the notebook is stored in the object_detection folder.
     #cwd = os.getcwd()
+    #os.chdir('../lib')
+    #import object_detection
+    #os.chdir('../lib/object_detection')
     os.chdir('../lib')
-    #sys.path.append("..")
-    import object_detection
-    os.chdir('../lib/object_detection')
     from object_detection.utils import ops as utils_ops
     
     if tf.__version__ < '1.4.0':
@@ -43,7 +43,8 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
     # ## Object detection imports
     # Here are the imports from the object detection module.
     
-    
+    os.chdir('../lib/object_detection')
+ 
     from utils import label_map_util
     
     from utils import visualization_utils as vis_util
@@ -74,7 +75,7 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
     
     # ## Download Model
     
-    if False:   
+    if False:
         opener = urllib.request.URLopener()
         opener.retrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
         tar_file = tarfile.open(MODEL_FILE)
@@ -120,6 +121,7 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
     # image1.jpg
     # image2.jpg
     # If you want to test the code with your images, just add path to the images to the TEST_IMAGE_PATHS.
+
     PATH_TO_TEST_IMAGES_DIR = directory
     TEST_IMAGES_NAMES = os.listdir(directory)
     TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, TEST_IMAGES_NAMES[i]) for i in range(1,len(TEST_IMAGES_NAMES))]
@@ -176,7 +178,7 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
       return output_dict
     
     
-    
+    i = 0
     for image_path in TEST_IMAGE_PATHS:
       image = Image.open(image_path)
       # the array based representation of the image will be used later in order to prepare the
@@ -198,6 +200,9 @@ def objectDetection(directory = '../data/test_image/tensorflow'):
           line_thickness=8)
       plt.figure(figsize=IMAGE_SIZE)
       plt.imshow(image_np)
+      RGB_img = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
+      cv2.imwrite('../../output/detected_{}'.format(TEST_IMAGES_NAMES[i+1]),RGB_img)
+      i = i + 1
       
     os.chdir('../../doc')
     

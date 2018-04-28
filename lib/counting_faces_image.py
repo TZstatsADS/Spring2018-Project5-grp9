@@ -42,18 +42,18 @@ def face_dectect_image(directory = '../data/test_image/cascade/', scaleFactor = 
     TEST_IMAGES_NAMES = os.listdir(directory)
     TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, TEST_IMAGES_NAMES[i]) for i in range(1,len(TEST_IMAGES_NAMES))]
     n = len(TEST_IMAGE_PATHS)
-    i = 0
-    
+
     for image in TEST_IMAGE_PATHS: 
     
         img = cv2.imread(image)
         length = int(max(img.shape[0:2]))
         height = int(min(img.shape[0:2]))
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        i = 0
         
         for angle in [0, -30, 30]:
             rimg = rotate_image(gray, angle)
-            faces = face_cascade.detectMultiScale(rimg, 1.3, 5)
+            faces = face_cascade.detectMultiScale(rimg, scaleFactor, minNeighbors)
             
             if len(faces):
                     faces = rotate_point(faces, img, -angle)
@@ -66,11 +66,15 @@ def face_dectect_image(directory = '../data/test_image/cascade/', scaleFactor = 
         else:         
             for (x,y,w,h) in faces:
                 cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),10)
-                
-            cv2.rectangle(img, ((0,img.shape[0] - 50*int(height/1080))),(620 * int(length/1440), img.shape[0]), (255,255,255), -1)
-            cv2.putText(img, "Number of faces detected: " + str(faces.shape[0]), (0,img.shape[0] -10), cv2.FONT_HERSHEY_TRIPLEX, 1 * (length*height)/(1536*2560)+0.2,  (0,0,0), 2)
-        
+            cv2.rectangle(img, ((0,img.shape[0] -25)),(270, img.shape[0]), (255,255,255), -1)
+            
+        if type(faces) == tuple:
+            cv2.putText(img, "Number of faces detected: 1" , (0,img.shape[0] -10), cv2.FONT_HERSHEY_TRIPLEX, 0.5,  (0,0,0), 1)
+        else:
+            cv2.putText(img, "Number of faces detected: " + str(faces.shape[0]), (0,img.shape[0] -10), cv2.FONT_HERSHEY_TRIPLEX, 0.5,  (0,0,0), 1)
+                    
         RGB_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        plt.figure(figsize=(12,8))
         plt.imshow(RGB_img)
         plt.show()
             

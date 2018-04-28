@@ -18,11 +18,11 @@ def objectDetectionCap():
 
     # This is needed since the notebook is stored in the object_detection folder.
     #cwd = os.getcwd()
-    os.chdir('../lib')
+    #os.chdir('../lib')
     #sys.path.append("..")
-    import object_detection
-    os.chdir('../lib/object_detection')
+    os.chdir('../lib')
     from object_detection.utils import ops as utils_ops
+
     
     if tf.__version__ < '1.4.0':
       raise ImportError('Please upgrade your tensorflow installation to v1.4.* or later!')
@@ -38,7 +38,7 @@ def objectDetectionCap():
     # ## Object detection imports
     # Here are the imports from the object detection module.
     
-    
+    os.chdir('../lib/object_detection')
     from utils import label_map_util
     
     from utils import visualization_utils as vis_util
