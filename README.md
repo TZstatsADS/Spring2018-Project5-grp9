@@ -37,13 +37,19 @@ As showed above, our cascade model can accurately detect rotated faces.
 ![image](figs/detected_p307505730-5.jpg)
 ![image](figs/detected_WB_CatsNotAds_012.jpg) 
 
+**The more exciting part of this project is the object detection using real time webcam based on both cascade and TensorFlow. You can refer to [Jupyter Notebook](doc/main.ipynb) for more details. Please note that we suggest clone/download the whole repository so that you can to reproduce the results easily through [Jupyter Notebook](doc/main.ipynb).**
+
+**Note that you may need to set the working directory at "[foler](doc)" folder by hand before you start reproduce the results, if not by default. Otherwise, you may run into some directory problems.**
+
 	
 **Contribution statement**: Generally we did the project together during our meetings (implement face detection model and API).
 + Chen, Ziyu: Built the original model; implemented tensorflow to a contemporary model; debugged and edited the main notebook to make it reproducible and look better.
 + Cui, Wanting: Improved by adding rotate element.  
 + Kong, Yuehan: Tried to improve by adding upper body element; wrote and organized github page.
 + Lam, Leo: Debugged the code; wrote the main notebook.
-+ Zha, Yuhan: Researched and introduced tensorflow; prepare the presentation.
++ Zha, Yuhan: Researched and introduced tensorflow; prepare the presentation
+
+
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
