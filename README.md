@@ -25,10 +25,10 @@ As showed above, our cascade model can accurately detect rotated faces.
 ![image](figs/processed_1500092556937.jpg)
 ![image](figs/processed_portrait-happy-family-food-dining-table-home-67745221.jpg)
 ![image](figs/processed_p307505730-5)
-![image](figs/processed_WB_CatsNotAds_012.jpg)  
+![image](figs/processed_BfO7BIr.jpg)  
 
 **Object detection based on TensorFlow:**
-![image](figs/detected_1500092556937.jpg)
+![image](figs/detected_11500092556937.jpg)
 ![image](figs/detected_portrait-happy-family-food-dining-table-home-67745221.jpg)
 ![image](figs/detected_p307505730-5)
 ![image](figs/detected_WB_CatsNotAds_012.jpg) 
