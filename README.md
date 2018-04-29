@@ -15,7 +15,7 @@
 
 + [main.ipynb](doc/main.ipynb)
 + A main reproducible [HTML page](https://rawgit.com/TZstatsADS/Spring2018-Project5-grp_9/master/doc/main.html)
-+ [Presentation](Group9%presentation.pdf)
++ [Presentation](Group9_presentation.pdf)
 
 # **Result demonstration**
 
