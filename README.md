@@ -1,4 +1,4 @@
-# ADS Project 5: Face Detection
+# ADS Project 5: Face and Object Detection
 
 **Projec title**: Face Detection
 
