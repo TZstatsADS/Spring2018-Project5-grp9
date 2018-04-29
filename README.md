@@ -23,7 +23,7 @@ As showed above, our cascade model can accurately detect rotated faces.
 
 
 
-**Object detection based on Cascade method:**
+**Face detection and counting based on Cascade method:**
 ![image](figs/processed_1500092556937.jpg)
 ![image](figs/processed_portrait-happy-family-food-dining-table-home-67745221.jpg)
 ![image](figs/processed_p307505730-5.jpg)
