@@ -39,7 +39,7 @@ As showed above, our cascade model can accurately detect rotated faces.
 
 **The more exciting part of this project is the object detection using real time webcam based on both cascade and TensorFlow. You can refer to [Jupyter Notebook](doc/main.ipynb) for more details. Please note that we suggest clone/download the whole repository so that you can to reproduce the results easily through [Jupyter Notebook](doc/main.ipynb).**
 
-**Note that you may need to set the working directory at "[foler](doc)" folder by hand before you start reproduce the results, if not by default. Otherwise, you may run into some directory problems.**
+**Note that you may need to set the working directory at "[doc](doc)" folder by hand before you start reproduce the results, if not by default. Otherwise, you may run into some directory problems.**
 
 	
 **Contribution statement**: Generally we did the project together during our meetings (implement face detection model and API).
